@@ -1,3 +1,6 @@
+#include "main.h"
+#include "auto_functions.h"
+
 
 
 /**
@@ -7,7 +10,7 @@
  * @param targetDegrees the amount of degrees the robot will rotate relative to its original bearing.
  *
  */
-void driveGyroTurn (int turnDirection, int targetDegrees) {
+void driveGyroTurn (enum Turn_Directions turnDirection, int targetDegrees) {
 	// initialize PD loop variables
 	float kp = 2;
 	float kd = 0.15;
