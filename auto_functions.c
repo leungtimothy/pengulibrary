@@ -1,8 +1,6 @@
 #include "main.h"
 #include "auto_functions.h"
 
-
-
 /**
  * Use this function command the robot to rotate about its Z axis using the data obtained via the gyroscope.
  *
