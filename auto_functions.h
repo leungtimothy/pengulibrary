@@ -1,10 +1,10 @@
 #ifndef AUTO_FUNCTIONS_H
 #define AUTO_FUNCTIONS_H
 
-enum Turn_Directions {
+typedef enum Turn_Directions {
 	LEFT,
 	RIGHT
-};
+} Turn_Directions;
 
 /**
  * Use this function command the robot to rotate about its Z axis using the data obtained via the gyroscope.
@@ -13,6 +13,6 @@ enum Turn_Directions {
  * @param targetDegrees the amount of degrees the robot will rotate relative to its original bearing.
  *
  */
-void driveGyroTurn(enum Turn_Directions turnDirection, int targetDegrees);
+void driveGyroTurn(Turn_Directions turnDirection, int targetDegrees);
 
 #endif

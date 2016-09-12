@@ -1,6 +1,8 @@
 #ifndef UTIL_H_
 #define UTIL_H_
 
+#define JOYSTICK_DEADZONE 15
+
 #include "main.h"
 
 /*
@@ -13,5 +15,7 @@ int motorCap(int value);
 
 // needs documentation
 int joystickCheckDeadzone(int value);
+
+int cap(int value, int min, int max);
 
 #endif

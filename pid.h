@@ -3,7 +3,7 @@
 
 #include "main.h"
 
-typedef struct PID {
+typedef struct {
 	float kp;
 	float ki;
 	float kd;

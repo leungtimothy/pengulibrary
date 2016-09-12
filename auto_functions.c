@@ -1,5 +1,5 @@
-#include "main.h"
 #include "auto_functions.h"
+#include <API.h>
 
 /**
  * Use this function command the robot to rotate about its Z axis using the data obtained via the gyroscope.
@@ -8,7 +8,7 @@
  * @param targetDegrees the amount of degrees the robot will rotate relative to its original bearing.
  *
  */
-void driveGyroTurn (enum Turn_Directions turnDirection, int targetDegrees) {
+void driveGyroTurn (Turn_Directions turnDirection, int targetDegrees) {
 	// initialize PD loop variables
 	float kp = 2;
 	float kd = 0.15;
